@@ -16,7 +16,7 @@
             background: linear-gradient(135deg, #4e3c72 0%, #7a5298 100%);
             color: white;
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
         }
 
         .container {
@@ -43,6 +43,15 @@
             margin-bottom: 10px;
         }
 
+        .spruced {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
         .header p {
             font-size: 1.2rem;
             opacity: 0.8;
@@ -51,18 +60,18 @@
         .playlist {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 30px;
+            padding: 10px;
+            margin-bottom: 10px;
         }
 
         .track {
             display: flex;
             align-items: center;
-            padding: 15px;
+            padding: 4px;
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-bottom: 10px;
+            margin-bottom: 7px;
             background: rgba(255, 255, 255, 0.05);
         }
 
@@ -112,7 +121,7 @@
             border-radius: 15px;
             padding: 25px;
             position: sticky;
-            bottom: 20px;
+            /* bottom: 20px; */
         }
 
         .now-playing {
@@ -335,7 +344,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>We Don't Wanna Make You Dance</h1>
+            <h2 class="spruced">We Don't Wanna Make You Dance</h2>
             <p>
                 <h2>Playing Side 1<br/><a style="color: #37e" href="side2.html">Play Side 2</a></h2>
             </p>
@@ -354,7 +363,7 @@
                 <p id="current-artist">No track selected</p>
             </div>
 
-            <div class="visualizer" id="visualizer">
+            <!-- <div class="visualizer" id="visualizer">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -365,7 +374,7 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
-            </div>
+            </div> -->
 
             <div class="controls">
                 <button class="control-btn" id="prevBtn">⏮</button>
