@@ -353,10 +353,6 @@
             </p>
         </div>
 
-        <div class="playlist" id="playlist">
-            <!-- Tracks will be populated by JavaScript -->
-        </div>
-
         <div class="player">
             <div class="now-playing">
                 <!-- <p>
@@ -404,6 +400,10 @@
                 <button class="mode-btn" id="shuffleBtn">🔀</button>
                 <button class="mode-btn" id="repeatBtn">🔁</button>
             </div>
+        </div>
+
+        <div class="playlist" id="playlist">
+            <!-- Tracks will be populated by JavaScript -->
         </div>
     </div>
 
@@ -668,7 +668,7 @@
 
         // Initialize the music player when the page loads
         document.addEventListener('DOMContentLoaded', () => {
-            new MusicPlayer();
+            p = new MusicPlayer();
         });
     </script>
 </body>
